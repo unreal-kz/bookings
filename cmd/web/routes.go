@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/unreal-kz/BasicWebApp/pkg/config"
-	"github.com/unreal-kz/BasicWebApp/pkg/handlers"
+	"github.com/unreal-kz/bookings/pkg/config"
+	"github.com/unreal-kz/bookings/pkg/handlers"
 )
 
 func routes(app *config.AppConfig) http.Handler {

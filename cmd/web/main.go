@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/unreal-kz/BasicWebApp/pkg/config"
-	"github.com/unreal-kz/BasicWebApp/pkg/handlers"
-	"github.com/unreal-kz/BasicWebApp/pkg/render"
+	"github.com/unreal-kz/bookings/pkg/config"
+	"github.com/unreal-kz/bookings/pkg/handlers"
+	"github.com/unreal-kz/bookings/pkg/render"
 )
 
 const portNumber = ":8080"

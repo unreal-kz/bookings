@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/unreal-kz/BasicWebApp/pkg/config"
-	"github.com/unreal-kz/BasicWebApp/pkg/models"
-	"github.com/unreal-kz/BasicWebApp/pkg/render"
+	"github.com/unreal-kz/bookings/pkg/config"
+	"github.com/unreal-kz/bookings/pkg/models"
+	"github.com/unreal-kz/bookings/pkg/render"
 )
 
 var Repo *Repository
