@@ -40,11 +40,7 @@ func main() {
 
 	render.NewTemplates(&app)
 	log.Println("Starting server on port 8080")
-	// http.HandleFunc("/", handlers.Repo.Home)
-	// http.HandleFunc("/about", handlers.Repo.About)
-	// if err := http.ListenAndServe(":8080", nil); err != nil {
-	// 	log.Println(errors.New("something is wrong"), err)
-	// }
+
 	srv := &http.Server{
 		Addr:    portNumber,
 		Handler: routes(&app),

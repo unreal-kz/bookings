@@ -51,17 +51,10 @@ func RenderTemplate(w http.ResponseWriter, tmpl string, td *models.TemplateData)
 	if err != nil {
 		log.Println("Error writing templates to browser", err)
 	}
-	// parsedTemplate, _ := template.ParseFiles("./templates/"+tmpl, "./templates/base.layout.tmpl")
-	// err := parsedTemplate.Execute(w, nil)
-	// if err != nil {
-	// 	fmt.Println("error parsing template: ", err)
-	// 	return
-	// }
 }
 
 func CreateTempalteCache() (map[string]*template.Template, error) {
 	myCache := make(map[string]*template.Template)
-
 	// get all of the files *page.tmpl from ./templates
 	pages, err := filepath.Glob("./templates/*.page.tmpl")
 	if err != nil {
@@ -86,6 +79,5 @@ func CreateTempalteCache() (map[string]*template.Template, error) {
 		}
 		myCache[name] = ts
 	}
-	// log.Println(myCache)
 	return myCache, nil
 }
