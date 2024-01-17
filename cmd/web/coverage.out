@@ -1,0 +1,12 @@
+mode: set
+github.com/unreal-kz/bookings/cmd/web/main.go:23.13,26.16 2 0
+github.com/unreal-kz/bookings/cmd/web/main.go:26.16,28.3 1 0
+github.com/unreal-kz/bookings/cmd/web/main.go:29.2,34.33 3 0
+github.com/unreal-kz/bookings/cmd/web/main.go:38.18,52.16 10 1
+github.com/unreal-kz/bookings/cmd/web/main.go:52.16,55.3 2 0
+github.com/unreal-kz/bookings/cmd/web/main.go:56.2,64.12 6 1
+github.com/unreal-kz/bookings/cmd/web/middleware.go:11.53,12.71 1 0
+github.com/unreal-kz/bookings/cmd/web/middleware.go:12.71,15.3 2 0
+github.com/unreal-kz/bookings/cmd/web/middleware.go:18.45,28.2 3 1
+github.com/unreal-kz/bookings/cmd/web/middleware.go:30.50,32.2 1 1
+github.com/unreal-kz/bookings/cmd/web/routes.go:12.49,40.2 18 1

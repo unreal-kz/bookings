@@ -1,0 +1,22 @@
+mode: set
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:21.47,25.2 1 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:27.33,29.2 1 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:31.68,36.2 3 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:38.69,48.2 5 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:50.75,59.2 4 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:60.79,62.16 2 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:62.16,65.3 2 0
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:67.2,79.19 6 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:79.19,87.3 4 0
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:88.2,89.66 2 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:92.72,94.2 1 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:96.70,98.2 1 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:100.74,102.2 1 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:103.78,109.2 3 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:116.78,123.16 3 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:123.16,125.3 1 0
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:127.2,128.14 2 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:132.71,134.2 1 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:136.82,140.9 2 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:140.9,145.3 3 1
+github.com/unreal-kz/bookings/internal/handlers/handlers.go:146.2,153.4 4 0
