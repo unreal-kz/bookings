@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/gob"
 	"log"
 	"net/http"
 	"time"
@@ -8,6 +9,7 @@ import (
 	"github.com/alexedwards/scs/v2"
 	"github.com/unreal-kz/bookings/internal/config"
 	"github.com/unreal-kz/bookings/internal/handlers"
+	"github.com/unreal-kz/bookings/internal/models"
 	"github.com/unreal-kz/bookings/internal/render"
 )
 
@@ -19,6 +21,8 @@ var (
 )
 
 func main() {
+
+	gob.Register(models.Reservation{})
 
 	app.InProduction = false
 	session = scs.New()
