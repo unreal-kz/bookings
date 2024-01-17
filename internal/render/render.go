@@ -7,8 +7,9 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/unreal-kz/bookings/pkg/config"
-	"github.com/unreal-kz/bookings/pkg/models"
+	"github.com/justinas/nosurf"
+	"github.com/unreal-kz/bookings/internal/config"
+	"github.com/unreal-kz/bookings/internal/models"
 )
 
 var (
@@ -20,15 +21,16 @@ func NewTemplates(a *config.AppConfig) {
 	app = a
 }
 
-func AddDefualtData(td *models.TemplateData) *models.TemplateData {
-
+func AddDefualtData(td *models.TemplateData, r *http.Request) *models.TemplateData {
+	td.CSRFToken = nosurf.Token(r)
 	return td
 }
 
-func RenderTemplate(w http.ResponseWriter, tmpl string, td *models.TemplateData) {
+func RenderTemplate(w http.ResponseWriter, r *http.Request, tmpl string, td *models.TemplateData) {
 	var ts map[string]*template.Template
-	// get template cache from the app config
+
 	if app.UseCache {
+		// get template cache from the app config
 		ts = app.TmplCache
 	} else {
 		ts, _ = CreateTempalteCache()
@@ -42,7 +44,7 @@ func RenderTemplate(w http.ResponseWriter, tmpl string, td *models.TemplateData)
 
 	buf := new(bytes.Buffer) // optional
 
-	td = AddDefualtData(td)
+	td = AddDefualtData(td, r)
 
 	_ = t.Execute(buf, td) // if not use line of code, w used insted os buf
 
